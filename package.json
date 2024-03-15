@@ -7,8 +7,8 @@
     "node": "18.x"
   },
   "scripts": {
-    "dev": "vite --host",
-    "build": "vite build",
+    "dev": "cross-env BUILD_MODE=dev vite --host",
+    "build": "cross-env BUILD_MODE=production vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
